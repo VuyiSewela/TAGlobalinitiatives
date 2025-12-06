@@ -5,56 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TA Global Initiative</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="lang.js" defer></script>
 </head>
+
 <body>
+
   <header>
     <nav>
       <div class="logo">
         <img src="logo.png" alt="TA Global Initiative Logo">
       </div>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
+
+      <ul class="main-menu">
+        <li><a id="nav_about" href="#about"></a></li>
+        <li><a id="nav_services" href="#services"></a></li>
+        <li><a id="nav_gallery" href="#gallery"></a></li>
+        <li><a id="nav_contact" href="#contact"></a></li>
+      </ul>
+
+      <ul class="language-toggle">
+        <li><a onclick="changeLanguage('en')">English</a></li>
+        <li><a onclick="changeLanguage('fr')">Français</a></li>
       </ul>
     </nav>
+
     <div class="hero">
       <div class="hero-content">
-        <h1>Empowering communities</h1>
-        <p>Innovative solutions for sustainable growth</p>
-        <a href="#services" class="btn">View services</a>
+        <h1 id="hero_title"></h1>
+        <p id="hero_subtitle"></p>
+        <a href="#services" class="btn" id="hero_button"></a>
       </div>
     </div>
   </header>
 
   <section id="about">
-    <h2>Empowering communities</h2>
-    <h3>Innovative solutions for growth</h3>
-    <p>TA Global Initiative is a dynamic company dedicated to driving sustainable development across various sectors, including general trade, sanitation, construction, public works, resource exploitation, and potable water systems. We focus on creating economic growth opportunities through community-centered projects that deliver lasting benefits. Partner with us for reliable, innovative solutions that empower communities and promote a brighter future for all.</p>
-    <a href="#contact" class="btn">Get in touch</a>
+    <h2 id="about_title"></h2>
+    <h3 id="about_subtitle"></h3>
+    <p id="about_text"></p>
+    <a href="#contact" class="btn" id="about_button"></a>
   </section>
 
   <section id="services">
-    <h2>Empowering solutions</h2>
-    <h3>Innovative projects for sustainable growth</h3>
+    <h2 id="services_title"></h2>
+    <h3 id="services_subtitle"></h3>
+
     <div class="service">
-      <h4>Sustainable trade solutions</h4>
-      <p>Innovative approaches to enhance global trading practices.</p>
+      <h4 id="service1_title"></h4>
+      <p id="service1_text"></p>
     </div>
+
     <div class="service">
-      <h4>Water resource management</h4>
-      <p>Ensuring access to clean water for communities.</p>
+      <h4 id="service2_title"></h4>
+      <p id="service2_text"></p>
     </div>
+
     <div class="service">
-      <h4>Innovative sanitation solutions</h4>
-      <p>Transforming sanitation systems for healthier communities.</p>
+      <h4 id="service3_title"></h4>
+      <p id="service3_text"></p>
     </div>
-    <a href="#contact" class="btn">Get in touch</a>
+
+    <a href="#contact" class="btn" id="services_button"></a>
   </section>
 
   <section id="gallery">
-    <h2>Our Work in Action</h2>
+    <h2 id="gallery_title"></h2>
     <div class="gallery">
       <img src="work1.jpg" alt="Workers building road">
       <img src="work2.jpg" alt="Workers pouring concrete">
@@ -63,29 +77,41 @@
   </section>
 
   <section id="contact">
-    <h2>We're here to support you!</h2>
+    <h2 id="contact_title"></h2>
+
     <form>
-      <label>Name *</label><input type="text" placeholder="Jane Smith" required />
-      <label>Email address *</label><input type="email" placeholder="email@website.com" required />
-      <label>Phone number *</label><input type="tel" placeholder="555-555-5555" required />
-      <label>Message</label><textarea placeholder="Your message here..." required></textarea>
-      <label><input type="checkbox" required /> I allow this website to store my submission so they can respond to my inquiry.</label>
-      <button type="submit">Submit</button>
+      <label id="form_name_label"></label>
+      <input type="text" placeholder="Jane Smith" required />
+
+      <label id="form_email_label"></label>
+      <input type="email" placeholder="email@website.com" required />
+
+      <label id="form_phone_label"></label>
+      <input type="tel" placeholder="555-555-5555" required />
+
+      <label id="form_message_label"></label>
+      <textarea placeholder="" required></textarea>
+
+      <label><input type="checkbox" required /> 
+        <span id="form_checkbox_text"></span>
+      </label>
+
+      <button type="submit" id="form_button"></button>
     </form>
 
     <div class="contact-info">
-      <h3>Get in touch</h3>
+      <h3 id="contact_info_title"></h3>
       <p><strong>Email:</strong> tresor@taglobalinitiative.com</p>
-      <p><strong>Location:</strong> 66/D Mpudi, Matete, Kinshasa 012, Democratic Republic of Congo</p>
-      <p><strong>Hours:</strong><br>
-        Monday – Friday: 8:00am – 5:00pm<br>
-        Saturday: Closed<br>
-        Sunday: Closed</p>
+      <p><strong id="contact_location_label"></strong> 66/D Mpudi, Matete, Kinshasa 012, Democratic Republic of Congo</p>
+      <p><strong id="contact_hours_label"></strong><br>
+        <span id="contact_hours_text"></span>
+      </p>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 TA Global Initiative. All rights reserved.</p>
+    <p id="footer_text"></p>
   </footer>
+
 </body>
 </html>
