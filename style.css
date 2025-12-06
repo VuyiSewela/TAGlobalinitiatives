@@ -6,30 +6,63 @@ body {
   color: #333333;
   background: #ffffff;
 }
+
+/* NAVIGATION */
 nav {
-  background-color: #002147; /* Navy Blue */
+  background-color: #002147;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em;
 }
+
 nav ul {
   list-style: none;
   display: flex;
   gap: 1.5em;
   padding: 0;
+  margin: 0;
 }
+
 nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
+
+.main-menu {
+  display: flex;
+  gap: 1.5em;
+}
+
+/* LOGO */
 .logo img {
   width: 150px;
   height: auto;
 }
+
+/* LANGUAGE TOGGLE */
+.language-toggle {
+  list-style: none;
+  display: flex;
+  gap: 1.2em;
+  padding: 0;
+  margin: 0;
+}
+
+.language-toggle a {
+  cursor: pointer;
+  color: #f47b20;
+  font-weight: bold;
+}
+
+.language-toggle a:hover {
+  text-decoration: underline;
+}
+
+/* HERO SECTION */
 .hero {
-  background: url('hero.jpg') no-repeat center center/cover;
+  background: url('hero.jpeg') no-repeat center center/cover;
   color: white;
   height: 90vh;
   display: flex;
@@ -38,25 +71,31 @@ nav a {
   text-align: center;
   padding: 2em;
 }
+
 .hero-content h1 {
   font-size: 2.5em;
 }
+
 .btn {
   display: inline-block;
   padding: 0.7em 1.5em;
-  background: #f47b20; /* Orange */
+  background: #f47b20;
   color: white;
   text-decoration: none;
   border-radius: 5px;
   margin-top: 1em;
 }
+
+/* OTHER SECTIONS */
 section {
   padding: 2em 1em;
   text-align: center;
 }
+
 .service {
   margin: 2em 0;
 }
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -64,23 +103,27 @@ section {
   gap: 1em;
   margin-top: 2em;
 }
+
 .gallery img {
   width: 300px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
+
 form {
   max-width: 600px;
   margin: auto;
   display: grid;
   gap: 0.7em;
 }
+
 form input, form textarea {
   width: 100%;
   padding: 0.5em;
   box-sizing: border-box;
 }
+
 form button {
   padding: 0.7em;
   background: #002147;
@@ -88,10 +131,12 @@ form button {
   border: none;
   cursor: pointer;
 }
+
 .contact-info {
   text-align: center;
   margin-top: 2em;
 }
+
 footer {
   background: #002147;
   color: white;
